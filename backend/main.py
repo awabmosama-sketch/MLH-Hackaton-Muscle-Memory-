@@ -15,7 +15,10 @@ import models
 from database import engine, get_db
 from schemas import TicketRequest
 
-models.Base.metadata.create_all(bind=engine)
+try:
+    models.Base.metadata.create_all(bind=engine)
+except Exception as e:
+    print(f"Database table initialization notice: {e}")
 
 app = FastAPI(title="Ticket Triage Muscle Memory - Backend")
 
