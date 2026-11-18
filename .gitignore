@@ -1,0 +1,30 @@
+# --- Environment & Secrets ---
+.env
+backend/.env
+frontend/.env
+*.env.local
+
+# --- Python / FastAPI ---
+__pycache__/
+*.py[cod]
+*.class
+.venv/
+venv/
+env/
+dist/
+build/
+*.egg-info/
+
+# --- Node / React / Vite ---
+node_modules/
+dist-ssr/
+*.local
+
+# --- Docker & OS ---
+.docker/
+.DS_Store
+Thumbs.db
+
+# --- IDEs ---
+.vscode/
+.idea/
